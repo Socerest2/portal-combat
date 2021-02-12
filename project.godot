@@ -18,6 +18,13 @@ _global_script_class_icons={
 config/name="Portal Combat"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=640
+window/size/height=360
+window/size/test_width=1920
+window/size/test_height=1080
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
