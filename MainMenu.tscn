@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Resources/Fonts/LessPerfectDosVGA.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Play.gd" type="Script" id=2]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -20,10 +21,10 @@ __meta__ = {
 }
 
 [node name="Title" type="RichTextLabel" parent="."]
-margin_left = 745.0
-margin_top = 80.0
-margin_right = 954.0
-margin_bottom = 153.0
+margin_left = 603.729
+margin_top = 74.9546
+margin_right = 812.729
+margin_bottom = 147.955
 rect_scale = Vector2( 3, 3 )
 size_flags_horizontal = 3
 custom_fonts/normal_font = ExtResource( 1 )
@@ -40,23 +41,25 @@ margin_bottom = 67.5175
 text = "By Soc & Colligo"
 
 [node name="Play" type="Button" parent="."]
-margin_left = 258.278
-margin_top = 460.942
-margin_right = 744.278
-margin_bottom = 550.942
+margin_left = 229.688
+margin_top = 408.806
+margin_right = 715.688
+margin_bottom = 498.806
 custom_fonts/font = ExtResource( 1 )
 text = "Play"
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Settings" type="Button" parent="."]
-margin_left = 1223.94
-margin_top = 463.123
-margin_right = 1709.94
-margin_bottom = 553.123
+margin_left = 1086.03
+margin_top = 400.897
+margin_right = 1572.03
+margin_bottom = 490.897
 custom_fonts/font = ExtResource( 1 )
 text = "Settings"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="pressed" from="Play" to="Play" method="_on_Play_pressed"]
