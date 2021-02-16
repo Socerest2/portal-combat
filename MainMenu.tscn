@@ -12,10 +12,8 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -3.74316
-margin_top = -2.0
-margin_right = 2353.26
-margin_bottom = 998.0
+margin_right = 2357.0
+margin_bottom = 1000.0
 color = Color( 0.176471, 0.176471, 0.176471, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -26,10 +24,10 @@ stream = ExtResource( 3 )
 autoplay = true
 
 [node name="Title" type="RichTextLabel" parent="."]
-margin_left = 603.729
-margin_top = 74.9546
-margin_right = 812.729
-margin_bottom = 147.955
+margin_left = 169.027
+margin_top = 19.455
+margin_right = 338.054
+margin_bottom = 87.4305
 rect_scale = Vector2( 3, 3 )
 size_flags_horizontal = 3
 custom_fonts/normal_font = ExtResource( 1 )
@@ -46,10 +44,10 @@ margin_bottom = 67.5175
 text = "By Soc & Colligo"
 
 [node name="Play" type="Button" parent="."]
-margin_left = 229.688
-margin_top = 408.806
-margin_right = 715.688
-margin_bottom = 498.806
+margin_left = 169.027
+margin_top = 248.472
+margin_right = 655.027
+margin_bottom = 338.472
 custom_fonts/font = ExtResource( 1 )
 text = "Play"
 script = ExtResource( 2 )
@@ -58,10 +56,10 @@ __meta__ = {
 }
 
 [node name="Settings" type="Button" parent="."]
-margin_left = 1086.03
-margin_top = 400.897
-margin_right = 1572.03
-margin_bottom = 490.897
+margin_left = 169.027
+margin_top = 372.042
+margin_right = 655.027
+margin_bottom = 462.042
 custom_fonts/font = ExtResource( 1 )
 text = "Settings"
 __meta__ = {
