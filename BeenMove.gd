@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 
 const ACCELERATION = 400
-const MAX_SPEED = 100
+const MAX_SPEED = 150
 const FRICTION = 400 #Make a variable for velocity so it can be changed later.
 var velocity = Vector2.ZERO
 
@@ -16,4 +16,4 @@ func _physics_process(delta): #Anything in this function is done on physics upda
 		velocity = input_vector
 	else:
 		velocity = Vector2.ZERO
-	move_and_collide(velocity)
+	move_and_collide(velocity * delta * MAX_SPEED)

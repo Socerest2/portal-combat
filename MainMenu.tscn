@@ -24,10 +24,10 @@ stream = ExtResource( 3 )
 autoplay = true
 
 [node name="Title" type="RichTextLabel" parent="."]
-margin_left = 169.027
-margin_top = 19.455
-margin_right = 338.054
-margin_bottom = 87.4305
+margin_left = 360.0
+margin_top = 120.0
+margin_right = 529.027
+margin_bottom = 187.976
 rect_scale = Vector2( 3, 3 )
 size_flags_horizontal = 3
 custom_fonts/normal_font = ExtResource( 1 )
@@ -44,10 +44,10 @@ margin_bottom = 67.5175
 text = "By Soc & Colligo"
 
 [node name="Play" type="Button" parent="."]
-margin_left = 169.027
-margin_top = 248.472
-margin_right = 655.027
-margin_bottom = 338.472
+margin_left = 360.0
+margin_top = 368.472
+margin_right = 846.0
+margin_bottom = 458.472
 custom_fonts/font = ExtResource( 1 )
 text = "Play"
 script = ExtResource( 2 )
@@ -56,10 +56,10 @@ __meta__ = {
 }
 
 [node name="Settings" type="Button" parent="."]
-margin_left = 169.027
-margin_top = 372.042
-margin_right = 655.027
-margin_bottom = 462.042
+margin_left = 360.0
+margin_top = 492.042
+margin_right = 846.0
+margin_bottom = 582.042
 custom_fonts/font = ExtResource( 1 )
 text = "Settings"
 __meta__ = {
