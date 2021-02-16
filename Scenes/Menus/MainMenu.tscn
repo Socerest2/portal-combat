@@ -1,8 +1,25 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Resources/Fonts/LessPerfectDosVGA.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Play.gd" type="Script" id=2]
 [ext_resource path="res://Resources/Music/mainmenu.wav" type="AudioStream" id=3]
+[ext_resource path="res://Resources/Sprites/0001-sheet.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/Menus/PlayAnim.gd" type="Script" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "PotionSpin"
+length = 2.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, 0, 0, 0, 0, 47, 0, 0, 0, 0 ),
+"times": PoolRealArray( 0, 2 )
+}
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -44,9 +61,9 @@ margin_bottom = 67.5175
 text = "By Soc & Colligo"
 
 [node name="Play" type="Button" parent="."]
-margin_left = 360.0
+margin_left = 90.0
 margin_top = 368.472
-margin_right = 846.0
+margin_right = 576.0
 margin_bottom = 458.472
 custom_fonts/font = ExtResource( 1 )
 text = "Play"
@@ -56,13 +73,25 @@ __meta__ = {
 }
 
 [node name="Settings" type="Button" parent="."]
-margin_left = 360.0
+margin_left = 90.0
 margin_top = 492.042
-margin_right = 846.0
+margin_right = 576.0
 margin_bottom = 582.042
 custom_fonts/font = ExtResource( 1 )
 text = "Settings"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 985.522, 424.291 )
+scale = Vector2( 6, 6 )
+texture = ExtResource( 4 )
+hframes = 48
+frame = 45
+script = ExtResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+playback_speed = 0.5
+anims/PotionSpin = SubResource( 1 )
 [connection signal="pressed" from="Play" to="Play" method="_on_Play_pressed"]

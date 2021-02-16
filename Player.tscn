@@ -7,7 +7,7 @@
 radius = 8.67618
 height = 1.90895
 
-[node name="Node2D" type="Node2D"]
+[node name="Player" type="Node2D"]
 
 [node name="Been" type="KinematicBody2D" parent="."]
 scale = Vector2( 3, 3 )
