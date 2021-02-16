@@ -1,9 +1,9 @@
 extends KinematicBody2D
 
 
-const ACCELERATION = 50
-const MAX_SPEED = 250
-const FRICTION = 35 #Make a variable for velocity so it can be changed later.
+const ACCELERATION = 1500
+const MAX_SPEED = 350
+const FRICTION = 1750 #Make a variable for velocity so it can be changed later.
 var velocity = Vector2.ZERO
 
 #The following function checks inputs then changes player velocity on physics updates.
@@ -14,8 +14,7 @@ func _physics_process(delta): #Anything in this function is done on physics upda
 	input_vector = input_vector.normalized()
 	
 	if input_vector != Vector2.ZERO:
-		velocity += input_vector * ACCELERATION * delta
-		velocity = velocity.clamped(MAX_SPEED * delta)
+		velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
-	move_and_collide(velocity)
+	move_and_collide(velocity * delta)
