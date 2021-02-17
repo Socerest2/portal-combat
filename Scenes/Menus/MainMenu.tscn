@@ -59,6 +59,9 @@ margin_top = 27.5175
 margin_right = 197.642
 margin_bottom = 67.5175
 text = "By Soc & Colligo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Play" type="Button" parent="."]
 margin_left = 90.0
@@ -88,7 +91,7 @@ position = Vector2( 985.522, 424.291 )
 scale = Vector2( 6, 6 )
 texture = ExtResource( 4 )
 hframes = 48
-frame = 46
+frame = 15
 script = ExtResource( 5 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
