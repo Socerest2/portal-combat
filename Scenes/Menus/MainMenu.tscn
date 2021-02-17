@@ -41,10 +41,10 @@ stream = ExtResource( 3 )
 autoplay = true
 
 [node name="Title" type="RichTextLabel" parent="."]
-margin_left = 360.0
-margin_top = 120.0
-margin_right = 529.027
-margin_bottom = 187.976
+margin_left = 90.0
+margin_top = 93.061
+margin_right = 259.027
+margin_bottom = 161.037
 rect_scale = Vector2( 3, 3 )
 size_flags_horizontal = 3
 custom_fonts/normal_font = ExtResource( 1 )
@@ -88,7 +88,7 @@ position = Vector2( 985.522, 424.291 )
 scale = Vector2( 6, 6 )
 texture = ExtResource( 4 )
 hframes = 48
-frame = 45
+frame = 46
 script = ExtResource( 5 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
