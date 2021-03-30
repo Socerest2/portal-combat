@@ -7,7 +7,7 @@ Welcome to Portal Combat!  This is a game started by Socerest2 and Collig0.  Rig
 #FAQ
 
 Q: What platforms will the game be available for?
-#A: The first priority is to make this a web game.  After that, the priority is Linux, Windows, then finally Android.
+#A: The first priority is to make this a web game.  After that, the priority is Linux, Windows, then finally Android. (And maybe switch/3ds/wii u if we feel like it)
 
 Q: When will the game be completed?
 
